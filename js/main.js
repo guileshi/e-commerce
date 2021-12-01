@@ -3,6 +3,7 @@ var tablet;
 var pc;
 
 $(window).load(function () {
+    
     if (window.screen.width < 576.98) {
 
         celular = true;
@@ -15,5 +16,21 @@ $(window).load(function () {
 });
 
 $('.header__menu').click(function(){
-    $('.navbar').toggle('_hide');
+    $('.nav').toggleClass("hide");
+    $('.nav__filter').toggleClass('hide')
 })
+
+$('.nav__filter').click(function(){
+    $('.nav').toggleClass("hide");
+    $('.nav__filter').toggleClass('hide')
+})
+
+function toggleNavFocus(linkname){
+    $('.nav__focus').removeClass('nav__focus')
+
+    $(`.${linkname}`).addClass('nav__focus')
+}
+
+function removeNavFocus(){
+    $('.nav__focus').removeClass('nav__focus')
+}

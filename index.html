@@ -12,6 +12,8 @@
     <link rel="stylesheet" href="css/style.css">
     <!-- CSS Hero -->
     <link rel="stylesheet" href="css/hero.css">
+    <!-- CSS Newest -->
+    <link rel="stylesheet" href="css/newest.css">
     <!-- CSS Font-Awesome -->
     <link rel="stylesheet" href="vendor/fontawesome-free-5.15.4-web/css/all.min.css">
     <!-- Site Icon -->
@@ -20,40 +22,121 @@
 
 <body>
 
+    <div class="nav__filter hide">
 
-    <nav class="navbar">
+    </div>
+    <nav class="nav hide" role="navigation">
         <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <ul class="navbar__list">
-                        <li class="navbar__item">
-                            <a href="#" role="navigation" class="navbar__link">
-                                Home
-                            </a>
-                        </li>
-                        <li class="navbar__item">
-                            <a href="#" role="navigation" class="navbar__link">
-                                Catalog
-                                <div class="navbar__link__icon"><i class="fas fa-chevron-right"></i></div>
-                            </a>
-                        </li>
-                        <li class="navbar__item">
-                            <a href="#" role="navigation" class="navbar__link">
-                                Collections
-                                <div class="navbar__link__icon"><i class="fas fa-chevron-right"></i></div>
-                            </a>
-                        </li>
-                        <li class="navbar__item">
-                            <a href="#" role="navigation" class="navbar__link">
-                                Terms and Conditions
-                            </a>
-                        </li>
-                    </ul>
-                </div>
+            <div class="col-3">
+                <ul class="navbar__list">
+                    <li class="navbar__item">
+                        <a href="#" role="link" class="navbar__link" onmouseenter="removeNavFocus()">
+                            Home
+                        </a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="#" role="link" class="navbar__link" onmouseenter="toggleNavFocus('navbar__catalog')">
+                            Catalog
+                            <div class="navbar__link__icon"><i class="fas fa-chevron-right"></i>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="#" role="link" class="navbar__link"
+                            onmouseenter="toggleNavFocus('navbar__collections')">
+                            Collections
+                            <div class="navbar__link__icon"><i class="fas fa-chevron-right"></i></div>
+                        </a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="#" role="link" class="navbar__link" onmouseenter="removeNavFocus()">
+                            Terms and Conditions
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="navbar__catalog">
+                <ul class="navbar__list -catalog">
+                    <li class="navbar__item">
+                        <a href="#" class="navbar__link" role="link">
+                            T-Shirt
+                        </a>
+                    </li>
+
+                    <li class="navbar__item">
+                        <a href="#" class="navbar__link" role="link">
+                            Pants
+                        </a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="#" class="navbar__link" role="link">
+                            Skirt
+                        </a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="#" class="navbar__link" role="link">
+                            Dress
+                        </a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="#" class="navbar__link" role="link">
+                            Shoes
+                        </a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="#" class="navbar__link" role="link">
+                            Watchers
+                        </a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="#" class="navbar__link" role="link">
+                            Earrings
+                        </a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="#" class="navbar__link" role="link">
+                            Handbag
+                        </a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="#" class="navbar__link" role="link">
+                            Glasses
+                        </a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="#" class="navbar__link" role="link">
+                            Hats
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="navbar__collections">
+                <ul class="navbar__list -collections">
+                    <li class="navbar__item">
+                        <a href="#" class="navbar__link" role="link">
+                            Winter Collection
+                        </a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="#" class="navbar__link" role="link">
+                            Spring Collection
+                        </a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="#" class="navbar__link" role="link">
+                            Summer Collection
+                        </a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="#" class="navbar__link" role="link">
+                            Autumn Collection
+                        </a>
+                    </li>
+                </ul>
             </div>
         </div>
     </nav>
-    
+
     <header class="header">
         <div class="container-fluid">
             <div class="container">
@@ -61,10 +144,10 @@
                     <div class="col-12">
                         <div class="header__group">
                             <a role="button" type="button" href="#" class="header__menu">
-                                <div class="header__icon--bars">
+                                <div class="header__icon-bars">
                                     <i class="fas fa-bars"></i>
                                 </div>
-                                <div class="header__text">
+                                <div class="header__menu__text">
                                     Menu
                                 </div>
                             </a>
@@ -72,7 +155,7 @@
                                 MyLogo
                             </a>
                             <div class="header__search">
-                                <a href="#" class="header__icon--search">
+                                <a href="#" class="header__icon-search">
                                     <i class="fas fa-search"></i>
                                 </a>
                                 <form>
@@ -103,11 +186,120 @@
                                 Winter Collection
                             </h2>
                             <p class="hero__paragraph">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum fugit ab unde dolorum rerum eveniet odit neque porro necessitatibus error blanditiis quas illu.
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum fugit ab unde dolorum
+                                rerum eveniet odit neque porro necessitatibus error blanditiis quas illu.
                             </p>
                             <button type="button" role="button" class="button hero__button">
                                 Go-to-Button
                             </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="newest">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="newest__group">
+                        <div class="newest__text">
+                            <div class="newest__icon">
+                                <i class="fas fa-certificate"></i>
+                            </div>
+                            <h2 class="newest__title">
+                                Newest Products
+                            </h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="newest__carousel__group">
+                        <div class="carousel__controls">
+                            <button class="carousel__button right" onclick="sliderScrollRight()">
+                                <i class="fas fa-angle-right"></i>
+                            </button>
+                            <button class="carousel__button left" onclick="sliderScrollLeft()">
+                                <i class="fas fa-angle-left"></i>
+                            </button>
+                        </div>
+                        <div class="newest__carousel" id="newest__carousel">
+                            <div class="newest__list product">
+                                <a href="#">
+                                    <img src="assets/img/woman-5.jpg" class="newest__img" alt="">
+                                </a>
+                            </div>
+                            <div class="newest__list product">
+                                <a href="#">
+                                    <img src="assets/img/woman-5.jpg" class="newest__img" alt="">
+                                </a>
+                            </div>
+                            <div class="newest__list product">
+                                <a href="#">
+                                    <img src="assets/img/woman-5.jpg" class="newest__img" alt="">
+                                </a>
+                            </div>
+                            <div class="newest__list product">
+                                <a href="#">
+                                    <img src="assets/img/woman-5.jpg" class="newest__img" alt="">
+                                </a>
+                            </div>
+                            <div class="newest__list product">
+                                <a href="#">
+                                    <img src="assets/img/woman-5.jpg" class="newest__img" alt="">
+                                </a>
+                            </div>
+                            <div class="newest__list product">
+                                <a href="#">
+                                    <img src="assets/img/woman-5.jpg" class="newest__img" alt="">
+                                </a>
+                            </div>
+                            <div class="newest__list product">
+                                <a href="#">
+                                    <img src="assets/img/woman-5.jpg" class="newest__img" alt="">
+                                </a>
+                            </div>
+                            <div class="newest__list product">
+                                <a href="#">
+                                    <img src="assets/img/woman-5.jpg" class="newest__img" alt="">
+                                </a>
+                            </div>
+                            <div class="newest__list product">
+                                <a href="#">
+                                    <img src="assets/img/woman-5.jpg" class="newest__img" alt="">
+                                </a>
+                            </div>
+                            <div class="newest__list product">
+                                <a href="#">
+                                    <img src="assets/img/woman-5.jpg" class="newest__img" alt="">
+                                </a>
+                            </div>
+                            <div class="newest__list product">
+                                <a href="#">
+                                    <img src="assets/img/woman-5.jpg" class="newest__img" alt="">
+                                </a>
+                            </div>
+                            <div class="newest__list product">
+                                <a href="#">
+                                    <img src="assets/img/woman-5.jpg" class="newest__img" alt="">
+                                </a>
+                            </div>
+                            <div class="newest__list product">
+                                <a href="#">
+                                    <img src="assets/img/woman-5.jpg" class="newest__img" alt="">
+                                </a>
+                            </div>
+                            <div class="newest__list product">
+                                <a href="#">
+                                    <img src="assets/img/woman-5.jpg" class="newest__img" alt="">
+                                </a>
+                            </div>
+                            <div class="newest__list product">
+                                <a href="#">
+                                    <img src="assets/img/woman-5.jpg" class="newest__img" alt="">
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -126,6 +318,9 @@
 
     <!-- Import Main Javascript -->
     <script src="js/main.js"></script>
+
+    <!-- Import Carousel Javascript -->
+    <script src="js/carousel.js"> </script>
 </body>
 
 </html>
