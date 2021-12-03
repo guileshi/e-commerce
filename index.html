@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
+    <title>E-Commerce - Home</title>
     <!-- CSS Bootstrap -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <!-- CSS Main -->
@@ -14,13 +14,21 @@
     <link rel="stylesheet" href="css/hero.css">
     <!-- CSS Newest -->
     <link rel="stylesheet" href="css/newest.css">
+    <!-- CSS imageSection -->
+    <link rel="stylesheet" href="css/imageSection.css">
+    <!-- CSS Departments -->
+    <link rel="stylesheet" href="css/departments.css">
+    <!-- CSS Companys -->
+    <link rel="stylesheet" href="css/companys.css">
+    <!-- CSS Footer -->
+    <link rel="stylesheet" href="css/footer.css">
     <!-- CSS Font-Awesome -->
     <link rel="stylesheet" href="vendor/fontawesome-free-5.15.4-web/css/all.min.css">
     <!-- Site Icon -->
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 </head>
 
-<body>
+<body class="index" id="index">
 
     <div class="nav__filter hide">
 
@@ -35,7 +43,7 @@
                         </a>
                     </li>
                     <li class="navbar__item">
-                        <a href="#" role="link" class="navbar__link" onmouseenter="toggleNavFocus('navbar__catalog')">
+                        <a href="catalog.html" role="link" class="navbar__link" onmouseenter="toggleNavFocus('navbar__catalog')">
                             Catalog
                             <div class="navbar__link__icon"><i class="fas fa-chevron-right"></i>
                             </div>
@@ -137,7 +145,7 @@
         </div>
     </nav>
 
-    <header class="header">
+    <header class="header" id="header">
         <div class="container-fluid">
             <div class="container">
                 <div class="row">
@@ -158,7 +166,7 @@
                                 <a href="#" class="header__icon-search">
                                     <i class="fas fa-search"></i>
                                 </a>
-                                <form>
+                                <form id="header__form">
                                     <input type="text" placeholder="Search" class="header__input">
                                 </form>
                             </div>
@@ -306,6 +314,296 @@
             </div>
         </div>
     </section>
+
+    <section class="imageSection">
+        <div class="container-fluid imageSection__background">
+            <div class="container">
+                <div class="row">
+                    <div class="col-7">
+                        <img src="assets/img/women-3-bw.jpg" alt="Image1" class="imageSection__img">
+                    </div>
+                    <div class="col-5">
+                        <div class="imageSection__text">
+                            <a href="#" class="button imageSection__button">
+                                Call-To-Action
+                            </a>
+                            <h2 class="imageSection__title">
+                                Title
+                            </h2>
+                            <p class="imageSection__paragraph">
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem nesciunt necessitatibus rerum aspernatur tempora saepe ea pariatur.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-5">
+                        <div class="imageSection__text">
+                            <a href="#" class="button imageSection__button">
+                                Call-To-Action
+                            </a>
+                            <h2 class="imageSection__title">
+                                Title
+                            </h2>
+                            <p class="imageSection__paragraph">
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem nesciunt necessitatibus rerum aspernatur tempora saepe ea pariatur.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-7">
+                        <img src="assets/img/woman-2-bw.jpg" alt="Image1" class="imageSection__img --second__of__type">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="departments">  
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="departments__text">
+                        <div class="departments__icon fa-2x">
+                            <i class="fas fa-list-ul"></i>
+                        </div>
+                        <h2 class="departments__title">
+                            Departments
+                        </h2>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="departments__group">
+                        <a href="#" class="departments__item">
+                            <img src="assets/img/woman-1.jpg" alt="Image1" class="departments__image">
+                            <h3 class="departments__item__title">
+                                T-Shirt
+                            </h3>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="departments__group">
+                        <a href="#" class="departments__item">
+                            <img src="assets/img/woman-1.jpg" alt="Image1" class="departments__image">
+                            <h3 class="departments__item__title">
+                                Pants
+                            </h3>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="departments__group">
+                        <a href="#" class="departments__item">
+                            <img src="assets/img/woman-1.jpg" alt="Image1" class="departments__image">
+                            <h3 class="departments__item__title">
+                                Skirt
+                            </h3>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="departments__group">
+                        <a href="#" class="departments__item">
+                            <img src="assets/img/woman-1.jpg" alt="Image1" class="departments__image">
+                            <h3 class="departments__item__title">
+                                Shoes
+                            </h3>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="departments__group">
+                        <a href="#" class="departments__item">
+                            <img src="assets/img/woman-1.jpg" alt="Image1" class="departments__image">
+                            <h3 class="departments__item__title">
+                                Summer Collection
+                            </h3>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="departments__group">
+                        <a href="#" class="departments__item">
+                            <img src="assets/img/woman-1.jpg" alt="Image1" class="departments__image">
+                            <h3 class="departments__item__title">
+                                Autumn Collection
+                            </h3>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="departments__group">
+                        <a href="#" class="departments__item">
+                            <img src="assets/img/woman-1.jpg" alt="Image1" class="departments__image">
+                            <h3 class="departments__item__title">
+                                Winter Collection
+                            </h3>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="departments__group">
+                        <a href="#" class="departments__item">
+                            <img src="assets/img/woman-1.jpg" alt="Image1" class="departments__image">
+                            <h3 class="departments__item__title">
+                                Spring Collection
+                            </h3>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="companys">
+        <div class="container-fluid companys__background">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <h2 class="companys__title">
+                            Companys
+                        </h2>
+                    </div>
+                    <div class="col-3">
+                        <div class="companys__item">
+                            <img src="assets/img/logo_brand.jpg" alt="Company1" class="companys__image">
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="companys__item">
+                            <img src="assets/img/logo_brand.jpg" alt="Company1" class="companys__image">
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="companys__item">
+                            <img src="assets/img/logo_brand.jpg" alt="Company1" class="companys__image">
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="companys__item">
+                            <img src="assets/img/logo_brand.jpg" alt="Company1" class="companys__image">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container-fluid footer__background">
+            <div class="container">
+                <div class="row">
+                    <div class="col-2">
+                        <h1 class="footer__logo">MyLogo</h1>
+                    </div>
+                    <div class="col-2">
+                        <ul class="footer__list">
+                            <li class="footer__item --title">
+                                Links
+                            </li>
+                            <li class="footer__item">
+                                <a href="#" class="footer__item__link">Home</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="catalog.html" class="footer__item__link">Catalog</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="#" class="footer__item__link">Accessories</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-2">
+                        <ul class="footer__list">
+                            <li class="footer__item --title">
+                                Collections
+                            </li>
+                            <li class="footer__item">
+                                <a href="#" class="footer__item__link">Winter Collection</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="#" class="footer__item__link">Autumn Collection</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="#" class="footer__item__link">Summer Collection</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="#" class="footer__item__link">Spring Collection</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-2">
+                        <ul class="footer__list">
+                            <li class="footer__item --title">
+                                Terms
+                            </li>
+                            <li class="footer__item">
+                                <a href="#" class="footer__item__link">Terms and Conditions</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="#" class="footer__item__link">Policies</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-4">
+                        <div class="footer__search">
+                            <a href="#" class="footer__icon-search">
+                                <i class="fas fa-search"></i>
+                            </a>
+                            <form class="w-100">
+                                <input type="text" placeholder="Search" class="footer__input">
+                            </form>
+                        </div>
+                    </div>
+
+                    <div class="col-12">
+                        <div class="footer__divider"></div>
+                    </div>
+
+                    <div class="col-6">
+                        <span class="footer__text">
+                            <span class="footer__country --country">
+                                Country
+                            </span>
+                            <span class="footer__country --city">
+                                City
+                            </span>
+                            <span class="footer__country --adress">
+                                Adress
+                            </span>
+                            <span class="footer__country --number">
+                                Number
+                            </span>
+                        </span>
+                    </div>
+                    <div class="col-6">
+                        <div class="footer__socialMedia">
+                            <span class="footer__text footer__socialMedia__text">Social Media</span>
+                            <a class="footer__text footer__socialMedia__icon"><i class="fab fa-instagram fa-2x"></i></a>
+                            <a class="footer__text footer__socialMedia__icon"><i class="fab fa-facebook fa-2x"></i></a>
+                        </div>
+                    </div>
+
+
+                    <div class="col-6">
+                        <span class="footer__text">
+                            <a href="mailto:email@hotmail.com" class="footer__email">email@hotmail.com</a>
+                        </span>
+                    </div>
+                    <div class="col-6">
+                        <div class="footer__phone">
+                            <a href="tel:+555 (11) 9123-5678" class="footer__phone__number">+555 (11) 9123-5678</a>
+                        </div>
+                    </div>
+
+                    <div class="col-12">
+                        <div class="footer__copyright">
+                            Copyright - All Rights Reserved
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+     <!-- Made by guileshi -->
 
     <!-- Import Jquery -->
     <script src="js/jquery-min.js"></script>

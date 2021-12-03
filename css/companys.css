@@ -1,0 +1,34 @@
+.companys{
+    margin: 5rem 0 0 0;
+}
+
+.companys__background{
+    padding: var(--px24);
+}
+
+.companys__background{
+    background: var(--accent-0);
+}
+
+.companys__title{
+    font-size: var(--px32);
+    font-weight: var(--medium);
+    color: var(--accent-10);
+    text-align: center;
+    margin-bottom: var(--px24);
+}
+
+.companys__item{
+    display: flex;
+    justify-content: center;
+}
+
+.companys__image{
+    max-height: 11.125rem;
+    min-height: 11.125rem;
+    min-width: 11.125rem;
+    max-width: 11.125rem;
+    
+    border-radius: 100%;
+    object-fit: cover;
+}

@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Commerce - Home</title>
+    <!-- CSS Bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- CSS Main -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- CSS Footer -->
+    <link rel="stylesheet" href="css/footer.css">
+    <!-- CSS Catalog -->
+    <link rel="stylesheet" href="css/product.css">
+    <!-- CSS Font-Awesome -->
+    <link rel="stylesheet" href="vendor/fontawesome-free-5.15.4-web/css/all.min.css">
+    <!-- Site Icon -->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+
+    <div class="nav__filter hide">
+
+    </div>
+    <nav class="nav hide" role="navigation">
+        <div class="container">
+            <div class="col-3">
+                <ul class="navbar__list">
+                    <li class="navbar__item">
+                        <a href="index.html" role="link" class="navbar__link" onmouseenter="removeNavFocus()">
+                            Home
+                        </a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="#" role="link" class="navbar__link" onmouseenter="toggleNavFocus('navbar__catalog')">
+                            Catalog
+                            <div class="navbar__link__icon"><i class="fas fa-chevron-right"></i>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="#" role="link" class="navbar__link"
+                            onmouseenter="toggleNavFocus('navbar__collections')">
+                            Collections
+                            <div class="navbar__link__icon"><i class="fas fa-chevron-right"></i></div>
+                        </a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="#" role="link" class="navbar__link" onmouseenter="removeNavFocus()">
+                            Terms and Conditions
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="navbar__catalog">
+                <ul class="navbar__list -catalog">
+                    <li class="navbar__item">
+                        <a href="#" class="navbar__link" role="link">
+                            T-Shirt
+                        </a>
+                    </li>
+
+                    <li class="navbar__item">
+                        <a href="#" class="navbar__link" role="link">
+                            Pants
+                        </a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="#" class="navbar__link" role="link">
+                            Skirt
+                        </a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="#" class="navbar__link" role="link">
+                            Dress
+                        </a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="#" class="navbar__link" role="link">
+                            Shoes
+                        </a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="#" class="navbar__link" role="link">
+                            Watchers
+                        </a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="#" class="navbar__link" role="link">
+                            Earrings
+                        </a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="#" class="navbar__link" role="link">
+                            Handbag
+                        </a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="#" class="navbar__link" role="link">
+                            Glasses
+                        </a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="#" class="navbar__link" role="link">
+                            Hats
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="navbar__collections">
+                <ul class="navbar__list -collections">
+                    <li class="navbar__item">
+                        <a href="#" class="navbar__link" role="link">
+                            Winter Collection
+                        </a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="#" class="navbar__link" role="link">
+                            Spring Collection
+                        </a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="#" class="navbar__link" role="link">
+                            Summer Collection
+                        </a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="#" class="navbar__link" role="link">
+                            Autumn Collection
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section class="headerInfo">
+        <div class="container-fluid">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="headerInfo__group">
+                            <a href="#" class="headerInfo__text">
+                                <div class="headerInfo__profile__icon">
+                                    <i class="fas fa-shopping-cart"></i>
+                                    <span class="headerInfo__badge">
+                                        12
+                                    </span>
+                                </div>
+                                <span>
+                                    Cart
+                                </span>
+                            </a>
+                            <a href="#" class="headerInfo__text">
+                                <div class="headerInfo__profile__icon">
+                                    <i class="fas fa-user"></i>
+                                </div>
+                                <span>
+                                    Profile
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <header class="header" id="header">
+        <div class="container-fluid">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="header__group">
+                            <a role="button" type="button" href="#" class="header__menu">
+                                <div class="header__icon-bars">
+                                    <i class="fas fa-bars"></i>
+                                </div>
+                                <div class="header__menu__text">
+                                    Menu
+                                </div>
+                            </a>
+                            <a href="index.html" class="header__logo">
+                                MyLogo
+                            </a>
+                            <div class="header__search">
+                                <a href="#" class="header__icon-search">
+                                    <i class="fas fa-search"></i>
+                                </a>
+                                <form id="header__form">
+                                    <input type="text" placeholder="Search" class="header__input">
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="product">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="row">
+                        <div class="col-5">
+                            <div class="col-12">
+                                <div class="product__image__group">
+                                    <div class="product__image" id="container__image__base">
+                                        <img src="assets/img/woman-5.jpg" alt="Image1" class="product__image__base" id="product__image__base" onmouseenter="getImage()">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-3">
+                                    <img src="assets/img/woman-5.jpg" alt="Image1" class="product__image__secondary">
+                                </div>
+                                <div class="col-3">
+                                    <img src="assets/img/woman-1.jpg" alt="Image1" class="product__image__secondary">
+                                </div>
+                                <div class="col-3">
+                                    <img src="assets/img/woman-4.jpg" alt="Image2" class="product__image__secondary">
+                                </div>
+                                <div class="col-3">
+                                    <img src="assets/img/woman-7.jpg" alt="Image3" class="product__image__secondary">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-7">
+                            <div class="product__text__group">
+                                <div class="col-12">
+                                    <h2 class="product__text__title">
+                                        BRAND T-Shirt Specifies
+                                    </h2>
+                                </div>
+                                <div class="col-12">
+                                    <div class="product__text__price">
+                                        <span class="product__text__price__new">
+                                            128.98
+                                        </span>
+                                        <span class="product__text__price__before">
+                                            228.98
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <span class="product__text__discont">
+                                        In cash with 10% OFF
+                                    </span>
+                                </div>
+                                <div class="col-12">
+                                    <span class="product__text__discont__price">
+                                        115.98
+                                    </span>
+                                </div>
+
+                                <div class="col-12">
+                                    <div class="product__text__piecemeal">
+                                        In up to 10x of <span class="product__text__piecemeal__price"> 12.89</span> on credit card
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <a href="#" class="product__text__payments">
+                                        See more payment options
+                                    </a>
+                                </div>
+                                <div class="col-12">
+                                    <a href="#" class="button product__text__buy__button">
+                                        <span class="product__text__button__icon">
+                                            <i class="fas fa-shopping-cart"></i>
+                                        </span>
+                                        Buy
+                                    </a>
+                                </div>
+                                <div class="col-12">
+                                    <div class="row">
+                                        <div class="col-6">
+                                            <a href="#" class="button product__text__button">
+                                                <span class="product__text__button__icon">
+                                                    <i class="fas fa-gift"></i>
+                                                </span>
+                                                Send as Gift
+                                            </a>
+                                            
+                                        </div>
+                                        <div class="col-6">
+                                            <a href="#" class="button product__text__button">
+                                                <span class="product__text__button__icon">
+                                                    <i class="fas fa-heart"></i>
+                                                </span>
+                                                Wishlist
+                                            </a>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container-fluid footer__background">
+            <div class="container">
+                <div class="row">
+                    <div class="col-2">
+                        <h1 class="footer__logo">MyLogo</h1>
+                    </div>
+                    <div class="col-2">
+                        <ul class="footer__list">
+                            <li class="footer__item --title">
+                                Links
+                            </li>
+                            <li class="footer__item">
+                                <a href="index.html" class="footer__item__link">Home</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="#" class="footer__item__link">Catalog</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="#" class="footer__item__link">Accessories</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-2">
+                        <ul class="footer__list">
+                            <li class="footer__item --title">
+                                Collections
+                            </li>
+                            <li class="footer__item">
+                                <a href="#" class="footer__item__link">Winter Collection</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="#" class="footer__item__link">Autumn Collection</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="#" class="footer__item__link">Summer Collection</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="#" class="footer__item__link">Spring Collection</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-2">
+                        <ul class="footer__list">
+                            <li class="footer__item --title">
+                                Terms
+                            </li>
+                            <li class="footer__item">
+                                <a href="#" class="footer__item__link">Terms and Conditions</a>
+                            </li>
+                            <li class="footer__item">
+                                <a href="#" class="footer__item__link">Policies</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-4">
+                        <div class="footer__search">
+                            <a href="#" class="footer__icon-search">
+                                <i class="fas fa-search"></i>
+                            </a>
+                            <form class="w-100">
+                                <input type="text" placeholder="Search" class="footer__input">
+                            </form>
+                        </div>
+                    </div>
+
+                    <div class="col-12">
+                        <div class="footer__divider"></div>
+                    </div>
+
+                    <div class="col-6">
+                        <span class="footer__text">
+                            <span class="footer__country --country">
+                                Country
+                            </span>
+                            <span class="footer__country --city">
+                                City
+                            </span>
+                            <span class="footer__country --adress">
+                                Adress
+                            </span>
+                            <span class="footer__country --number">
+                                Number
+                            </span>
+                        </span>
+                    </div>
+                    <div class="col-6">
+                        <div class="footer__socialMedia">
+                            <span class="footer__text footer__socialMedia__text">Social Media</span>
+                            <a class="footer__text footer__socialMedia__icon"><i class="fab fa-instagram fa-2x"></i></a>
+                            <a class="footer__text footer__socialMedia__icon"><i class="fab fa-facebook fa-2x"></i></a>
+                        </div>
+                    </div>
+
+
+                    <div class="col-6">
+                        <span class="footer__text">
+                            <a href="mailto:email@hotmail.com" class="footer__email">email@hotmail.com</a>
+                        </span>
+                    </div>
+                    <div class="col-6">
+                        <div class="footer__phone">
+                            <a href="tel:+555 (11) 9123-5678" class="footer__phone__number">+555 (11) 9123-5678</a>
+                        </div>
+                    </div>
+
+                    <div class="col-12">
+                        <div class="footer__copyright">
+                            Copyright - All Rights Reserved
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Made by guileshi -->
+
+    <!-- Import Jquery -->
+    <script src="js/jquery-min.js"></script>
+
+    <!-- Import Bootstrap -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Import Main Javascript -->
+    <script src="js/main.js"></script>
+
+    <!-- Importe Image Zoom -->
+    <script src="https://cdn.jsdelivr.net/npm/js-image-zoom/js-image-zoom.min.js"></script>
+
+    <!-- Import Image Javascript -->
+    <script src="js/image.js"></script>
+
+</body>
+
+</html>

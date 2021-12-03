@@ -1,0 +1,46 @@
+
+.imageSection__background{
+    background: var(--accent-0);
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+}
+
+.imageSection{
+    margin: 5rem 0;
+}
+
+.imageSection__img{
+    max-height: 31.25rem;
+    min-height: 31.25rem;
+    width: 100%;
+    object-fit: cover;
+    clip-path: polygon(15% 0%, 100% 0%, 85% 100%, 0% 100%);
+}
+
+.imageSection__img.--second__of__type{
+    clip-path: polygon(0 0, 85% 0, 100% 100%, 15% 100%);
+}
+
+.imageSection__text{
+    padding: var(--px24);
+    position: relative;
+    height: 100%;
+}
+
+.imageSection__title{
+    font-size: var(--px48);
+    font-weight: var(--medium);
+    color: var(--accent-9);
+}
+
+.imageSection__paragraph{
+    font-size: var(--px24);
+    font-weight: var(--light);
+    color: var(--accent-9);
+    text-align: justify;
+}
+
+.imageSection__button{
+    position: absolute;
+    bottom: var(--px32);
+    padding: var(--px8) var(--px16);
+}

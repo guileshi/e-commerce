@@ -1,0 +1,138 @@
+.footer__background{
+    background: var(--accent-0);
+    padding: var(--px24) 0 var(--px16) 0;
+}
+
+
+.footer::after{
+    content: "";
+    position: absolute;
+    width: 89%;
+    left:50%;
+    transform: translateX(-50%);
+    bottom: 0;
+    border-bottom: 2px solid var(--accent-1);
+}
+
+.footer__logo{
+    font-size: var(--px32);
+    font-weight: var(--medium);
+    color: var(--accent-8);
+}
+
+.footer__divider{
+    background: var(--accent-1);
+    margin: var(--px32) 0 var(--px24) 0;
+    height: 2px;
+    width: 100%;
+}
+
+.footer__item.--title{
+    font-size: var(--px24);
+    font-weight: var(--medium);
+    color: var(--accent-7);
+}
+
+.footer__item{
+    font-size: var(--px18);
+    font-weight: var(--regular);
+}
+
+.footer__item__link{
+    color: var(--accent-7);
+}
+
+.footer__item__link:hover{
+    color: var(--accent-10);
+}
+
+.footer__search{
+    display: flex;
+    background-color: var(--accent-1);
+    padding: var(--px8) var(--px16);
+    border-radius: .250rem;
+    width: 100%;
+}
+
+.footer__icon-search{
+    margin-right: var(--px8);
+    color: var(--accent-9);
+}
+
+.footer__icon-search:hover{
+    color: var(--base);
+    transition: var(--transition);
+}
+
+.footer__input{
+    background-color: transparent;
+    color: var(--accent-6);
+    font-size: var(--px18);
+    font-weight: var(--light);
+    width: 100%;
+}
+
+.footer__input:focus-visible{
+    color: var(--accent-9);
+}
+
+.footer__socialMedia, .footer__phone{
+    display: flex;
+    float: right;
+    align-items: center;
+}
+
+.footer__socialMedia__text{
+    margin-right: var(--px16);
+}
+
+.footer__text{
+    font-size: var(--px18);
+    font-weight: var(--regular);
+    color: var(--accent-7);
+}
+
+.footer__socialMedia__icon{
+    cursor: pointer;
+    padding-right: var(--px16);
+}
+
+.footer__socialMedia__icon:hover{
+    color: var(--base);
+    transition: var(--transition);
+}
+
+.footer__socialMedia__icon:last-of-type{
+    padding-right: 0;
+}
+
+.--country::after{
+    content: ',';
+}
+
+.--city::after{
+    content: '-';
+}
+
+.--adress::after{
+    content: ',';
+}
+
+.footer__email, .footer__phone__number{
+    font-size: var(--px18);
+    font-weight: var(--regular);
+    color: var(--accent-7);
+    text-decoration: underline;
+}
+
+.footer__email:hover, .footer__phone__number:hover{
+    color: var(--accent-10);
+}
+
+.footer__copyright{
+    font-size: var(--px18);
+    font-weight: var(--medium);
+    color: var(--accent-7);
+    text-align: center;
+    margin-top: var(--px16);
+}

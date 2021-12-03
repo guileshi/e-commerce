@@ -10,8 +10,10 @@ function sliderScrollLeft(){
         left: (scrollAmount -= scrollPerClick),
         behavior: "smooth"
     })
+    console.log(scrollAmount)
 
-    if(scrollAmount < 0){
+
+    if(scrollAmount < 1){
         scrollAmount = 0
         $('.carousel__button.left').css('display', 'none')
     }
@@ -26,7 +28,7 @@ function sliderScrollRight(){
         })
     }
 
-    if(scrollAmount <= 0){
+    if(scrollAmount < 1){
         $('.carousel__button.left').css('display', 'none')
     } else{
         $('.carousel__button.left').css('display', 'block')

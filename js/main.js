@@ -12,6 +12,18 @@ $(window).load(function () {
         tablet = true;
     } else if (window.screen.width > 1025) {
 
+
+        $('.header__input').focus(function(){           
+            $('#header__form').toggleClass('focus')
+        });
+        $('.header__input').blur(function(){ 
+            $('#header__form').toggleClass('focus')
+        });
+
+    }
+
+    if(!$('.index').is('#index')){
+        $('#header').addClass('fixed')
     }
 });
 

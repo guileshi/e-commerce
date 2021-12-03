@@ -1,0 +1,127 @@
+.product{
+    padding: var(--px24) 0;
+}
+
+.product__image__base{
+    max-height: 28.125rem;
+    min-height: 28.125rem;
+    width: 28.125rem;
+    object-fit: cover;
+    border-radius: 0.25rem;
+}
+
+.product__text__group{
+    background: var(--accent-0);
+    height: auto;
+    width: 100%;
+    padding: var(--px24);
+}
+
+.product__text__title{
+    font-size: var(--px32);
+    font-weight: var(--regular);
+    color: var(--accent-10);
+}
+
+.product__text__price__new{
+    font-size: var(--px64);
+    font-weight: var(--medium);
+    color: var(--accent-10);
+}
+
+.product__text__price__new::before{
+    content: "$";
+}
+
+.product__text__price__before{
+    font-size: var(--px24);
+    font-weight: var(--light);
+    color: var(--accent-10);
+    text-decoration: line-through;
+}
+
+.product__text__price__before::before{
+    content: "$";
+}
+
+.product__text__discont{
+    font-size: var(--px18);
+    font-weight: var(--light);
+    color: var(--accent-10);
+}
+
+.product__text__discont__price{
+    font-size: var(--px18);
+    font-weight: var(--regular);
+    color: var(--accent-10);
+}
+
+.product__text__discont__price::before{
+    content: "$";
+}
+
+.product__text__piecemeal{
+    font-size: var(--px18);
+    font-weight: var(--regular);
+    color: var(--accent-10);
+    margin-top: var(--px24);
+}
+
+.product__text__piecemeal__price{
+    font-weight: var(--medium);
+}
+
+.product__text__payments{
+    font-size: var(--px18);
+    font-weight: var(--light);
+    color: var(--accent-10);
+    text-decoration: underline;
+}
+
+.product__text__payments:hover{
+    color: var(--accent-7);
+}
+
+.product__text__buy__button, .product__text__button{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: var(--px12);
+    border-radius: 4px !important;
+}
+
+.product__text__buy__button{
+    background-color: var(--base);
+    color: var(--accent-0);
+    margin-top: var(--px32);
+    margin-bottom: var(--px8);
+}
+
+.product__text__button{
+    color: var(--accent-10);
+    background: var(--accent-1);
+}
+
+.product__text__button:hover{
+    color: var(--accent-7);
+    background: var(--accent-2);
+}
+
+.product__text__button:active{
+    color: var(--accent-6);
+    background: var(--accent-3);
+}
+
+.product__text__button__icon{
+    margin-right: var(--px8);
+}
+
+.product__image__secondary{
+    width: 100%;
+    max-height: 90px;
+    min-height: 90px;
+    object-fit: cover;
+    margin-top: var(--px8);
+    border-radius: 0.25rem;
+}
+
