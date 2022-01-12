@@ -12,8 +12,8 @@
     <link rel="stylesheet" href="css/style.css">
     <!-- CSS Footer -->
     <link rel="stylesheet" href="css/footer.css">
-    <!-- CSS Cart -->
-    <link rel="stylesheet" href="css/cart.css">
+    <!-- CSS Catalog -->
+    <link rel="stylesheet" href="css/product.css">
     <!-- CSS Font-Awesome -->
     <link rel="stylesheet" href="vendor/fontawesome-free-5.15.4-web/css/all.min.css">
     <!-- Site Icon -->
@@ -143,7 +143,7 @@
                 <div class="row">
                     <div class="col-12">
                         <div class="headerInfo__group">
-                            <a href="cart.html" class="headerInfo__text">
+                            <a href="#" class="headerInfo__text">
                                 <div class="headerInfo__profile__icon">
                                     <i class="fas fa-shopping-cart"></i>
                                     <span class="headerInfo__badge">
@@ -201,16 +201,103 @@
         </div>
     </header>
 
-    <section class="cart">
+    <section class="product">
         <div class="container">
             <div class="row">
-                <div class="col-3">
-                    <div class="cart__instructions">
-                        <div class="cart__instructions__icon">
-                            <i class="fas fa-shopping-cart"></i>
+                <div class="col-12">
+                    <div class="row">
+                        <div class="col-5">
+                            <div class="col-12">
+                                <div class="product__image__group">
+                                    <div class="product__image" id="container__image__base">
+                                        <img src="assets/img/woman-5.jpg" alt="Image1" class="product__image__base" id="product__image__base" onmouseenter="getImage()">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-3">
+                                    <img src="assets/img/woman-5.jpg" alt="Image1" class="product__image__secondary">
+                                </div>
+                                <div class="col-3">
+                                    <img src="assets/img/woman-1.jpg" alt="Image1" class="product__image__secondary">
+                                </div>
+                                <div class="col-3">
+                                    <img src="assets/img/woman-4.jpg" alt="Image2" class="product__image__secondary">
+                                </div>
+                                <div class="col-3">
+                                    <img src="assets/img/woman-7.jpg" alt="Image3" class="product__image__secondary">
+                                </div>
+                            </div>
                         </div>
-                        <div class="cart__instruction__text">
-                            Check your cart and click in the checkout button
+                        <div class="col-7">
+                            <div class="product__text__group">
+                                <div class="col-12">
+                                    <h2 class="product__text__title">
+                                        BRAND T-Shirt Specifies
+                                    </h2>
+                                </div>
+                                <div class="col-12">
+                                    <div class="product__text__price">
+                                        <span class="product__text__price__new">
+                                            128.98
+                                        </span>
+                                        <span class="product__text__price__before">
+                                            228.98
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <span class="product__text__discont">
+                                        In cash with 10% OFF
+                                    </span>
+                                </div>
+                                <div class="col-12">
+                                    <span class="product__text__discont__price">
+                                        115.98
+                                    </span>
+                                </div>
+
+                                <div class="col-12">
+                                    <div class="product__text__piecemeal">
+                                        In up to 10x of <span class="product__text__piecemeal__price"> 12.89</span> on credit card
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <a href="#" class="product__text__payments">
+                                        See more payment options
+                                    </a>
+                                </div>
+                                <div class="col-12">
+                                    <a href="#" class="button product__text__buy__button">
+                                        <span class="product__text__button__icon">
+                                            <i class="fas fa-shopping-cart"></i>
+                                        </span>
+                                        Buy
+                                    </a>
+                                </div>
+                                <div class="col-12">
+                                    <div class="row">
+                                        <div class="col-6">
+                                            <a href="#" class="button product__text__button">
+                                                <span class="product__text__button__icon">
+                                                    <i class="fas fa-gift"></i>
+                                                </span>
+                                                Send as Gift
+                                            </a>
+                                            
+                                        </div>
+                                        <div class="col-6">
+                                            <a href="#" class="button product__text__button">
+                                                <span class="product__text__button__icon">
+                                                    <i class="fas fa-heart"></i>
+                                                </span>
+                                                Wishlist
+                                            </a>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -344,6 +431,12 @@
 
     <!-- Import Main Javascript -->
     <script src="js/main.js"></script>
+
+    <!-- Importe Image Zoom -->
+    <script src="https://cdn.jsdelivr.net/npm/js-image-zoom/js-image-zoom.min.js"></script>
+
+    <!-- Import Image Javascript -->
+    <script src="js/image.js"></script>
 
 </body>
 

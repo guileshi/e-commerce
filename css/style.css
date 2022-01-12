@@ -131,7 +131,7 @@ label {
 .button{
     display: inline-block;
     color: var(--accent-0);
-    background-color: var(--baseLight);
+    background-color: var(--base);
     border-radius: var(--px12);
     font-weight: var(--semibold);
     font-size: var(--px24);
